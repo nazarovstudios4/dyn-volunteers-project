@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DYN Volunteers</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a class="header__logo-link" href="#home">
+          <img class="header__logo" src="./assets/logo.JPG" alt="DYN Volunteers logo" />
+        </a>
+
+        <button class="header__burger" type="button" aria-label="Open menu">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#about">About</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#projects">Projects</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__content">
+          <h1 class="hero__title">Small Steps<br />Real Help</h1>
+          <p class="hero__text">
+            Young volunteers supporting people, animals and local communities through simple actions
+            and teamwork.
+          </p>
+          <div class="hero__buttons">
+            <a class="hero__button hero__button--primary" href="#contacts">Join Us</a>
+            <a class="hero__button hero__button--secondary" href="#projects">
+              Our Projects &#9654;
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__image-wrapper">
+          <img
+            class="hero__image"
+            src="./assets/hero.png"
+            alt="DYN Volunteers main visual"
+            loading="eager"
+          />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="section-title">About Us</h2>
+
+        <div class="about__wrapper">
+          <div class="about__tabs">
+            <button class="about__tab about__tab--active" type="button" data-tab="mission">
+              Mission
+            </button>
+            <button class="about__tab" type="button" data-tab="team">Team</button>
+            <button class="about__tab" type="button" data-tab="plans">Future Plans</button>
+          </div>
+
+          <article class="about__content">
+            <h3 class="about__content-title">Mission</h3>
+            <p class="about__content-text">
+              We support people, animals and social initiatives through volunteer activities and
+              community projects.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects__list">
+          <article class="projects__card">
+            <h3 class="projects__title">Shelter Visit</h3>
+            <p class="projects__text">
+              Helping animal shelters with food, care and support for rescued animals.
+            </p>
+          </article>
+
+          <article class="projects__card">
+            <h3 class="projects__title">Charity Collection</h3>
+            <p class="projects__text">
+              Collecting useful items and supplies for families and people in need.
+            </p>
+          </article>
+
+          <article class="projects__card">
+            <h3 class="projects__title">Community Day</h3>
+            <p class="projects__text">
+              Organizing local volunteer activities and social events for young people.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <p class="gallery__text">Moments from our volunteer projects and community activities.</p>
+
+        <div class="gallery__grid">
+          <img
+            class="gallery__image"
+            src="./assets/gallery1.png"
+            alt="Food collection for charity project"
+            loading="lazy"
+          />
+          <img
+            class="gallery__image"
+            src="./assets/gallery2.png"
+            alt="Toys collected for children"
+            loading="lazy"
+          />
+          <img
+            class="gallery__image"
+            src="./assets/gallery3.png"
+            alt="Cat food support for animal shelter"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <h2 class="section-title">Contacts</h2>
+
+        <div class="contacts__list">
+          <a class="contacts__link" href="#">Telegram</a>
+          <a class="contacts__link" href="#">Instagram</a>
+          <a class="contacts__link" href="mailto:dynvolunteers@gmail.com">Email</a>
+          <a class="contacts__link" href="tel:+998901234567">Phone</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">DYN Volunteers — small steps, real help.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

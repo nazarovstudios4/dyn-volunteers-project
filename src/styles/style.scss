@@ -1,0 +1,46 @@
+@import "./kit/variables";
+@import "./kit/mixins";
+@import "./header";
+@import "./about";
+@import "./projects";
+@import "./gallery";
+@import "./contacts";
+@import "./footer";
+@import "./mobile";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $color-light;
+  color: $color-dark;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.section-title {
+  @include section-title;
+
+  text-align: center;
+  margin-bottom: 70px;
+}

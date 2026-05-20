@@ -1,0 +1,38 @@
+.projects {
+  padding: 100px 42px;
+  background-color: $color-primary;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  &__card {
+    min-height: 280px;
+    padding: 34px 28px;
+    border-radius: 20px;
+    background-color: $color-white;
+    transition: $transition;
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 34px;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}

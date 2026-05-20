@@ -1,0 +1,22 @@
+{
+  "name": "dyn-volunteers-project",
+  "version": "1.0.0",
+  "description": "Responsive landing page for DYN Volunteers",
+  "scripts": {
+    "compile": "sass src/styles/style.scss src/styles/style.css",
+    "prod": "sass src/styles/style.scss src/styles/style.css && postcss src/styles/style.css -o src/styles/style.min.css",
+    "lint": "stylelint \"src/styles/**/*.scss\" --fix",
+    "format": "prettier --write \"src/**/*.{html,scss,js}\""
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^8.0.0",
+    "autoprefixer": "^10.5.0",
+    "cssnano": "^8.0.1",
+    "postcss": "^8.5.15",
+    "postcss-cli": "^11.0.1",
+    "prettier": "^3.8.3",
+    "sass": "^1.99.0",
+    "stylelint": "^17.12.0",
+    "stylelint-config-standard-scss": "^17.0.0"
+  }
+}

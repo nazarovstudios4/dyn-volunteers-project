@@ -1,0 +1,11 @@
+.footer {
+  padding: 32px;
+  background-color: $color-dark;
+
+  &__text {
+    text-align: center;
+    color: $color-white;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
